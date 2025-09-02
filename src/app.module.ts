@@ -7,7 +7,7 @@ import { CountriesModule } from './countries/countries.module';
 import { HolidaysModule } from './holidays/holidays.module';
 import { Users } from './users/users.entity';
 import { CalendarEvents } from './calendar-events/calendar-event.entity';
-
+import { UsersModule } from './users/users.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -29,6 +29,7 @@ import { CalendarEvents } from './calendar-events/calendar-event.entity';
     }),
     CountriesModule,
     HolidaysModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
